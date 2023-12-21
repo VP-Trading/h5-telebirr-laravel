@@ -1,0 +1,22 @@
+{
+    "name": "vptrading/telebirr-laravel",
+    "description": "Laravel package for H5 telebirr api",
+    "autoload": {
+        "psr-4": {
+            "Vptrading\\TelebirrLaravel\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alazar Kassahun",
+            "email": "alazarkassahun@vptrading.et"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vptrading\\TelebirrLaravel\\TelebirrServiceProvider"
+            ]
+        }
+    }
+}
