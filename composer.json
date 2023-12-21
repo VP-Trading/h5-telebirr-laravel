@@ -1,6 +1,10 @@
 {
-    "name": "vptrading/ht-telebirr-laravel",
+    "name": "vptrading/h5-telebirr-laravel",
     "description": "Laravel package for H5 telebirr api",
+    "license": "MIT",
+    "require": {
+        "php": "^7.4 || ^8.0"
+    },
     "autoload": {
         "psr-4": {
             "Vptrading\\TelebirrLaravel\\": "src/"
