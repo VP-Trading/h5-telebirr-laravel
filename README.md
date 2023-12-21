@@ -1,4 +1,4 @@
-<p align="center"><a href="https://zergaw.com"><img src="/img/logo.png" alt="Logo Laravel Sanctum"></a></p>
+<p align="center"><a href="https://vptrading.et"><img src="/img/logo.png" alt="Logo V P Trading"></a></p>
 
 <h1 align="center">Laravel Pakcage For<br> Telebirr</h1>
 
@@ -12,25 +12,14 @@ This is a private package, meaning there is no way to require it using composer.
 
 ### Step One
 
-```
-"repositories": [
-    {
-        "type": "vcs",
-        "url": "git@github.com:zergawICSP/telebirr-laravel.git"
-    }
-],
-```
+Install the package using `composer require vptrading/h5-telebirr-laravel`
 
 ### Step Two
 
-Run `composer update` in your application and then `composer require zergawicsp/telebirr-laravel`
-
-### Step Three
-
-Run the artisan command to publish the zergawaICSP/telebirr-laravel configuration file.
+Run the artisan command to publish the Vptrading/telebirr-laravel configuration file.
 
 ```
-php artisan vendor:publish --provider="ZergawICSP\TelebirrLaravel\TelebirrServiceProvider"
+php artisan vendor:publish --provider="Vptrading\TelebirrLaravel\TelebirrServiceProvider"
 ```
 
 After running that command you will see a `telebirr.php` configuration file in your application's `config` directory.
@@ -45,14 +34,14 @@ Open the `telebirr.php` configuration file and add the key's provided to you fro
 
 In order to send a buy request using Telebirr<sup>&reg;</sup> all you have to do is import the `Telebirr` class where you want to use it and call the `buy` static method. The `Telebirr::buy()` method accepts for parameters, these are: Item name, amount, return url and shortcode.
 
-
 **Example**
 
 ```
-use ZergawICSP\TelebirrLaravel\Telebirr;
+use Vptrading\TelebirrLaravel\Telebirr;
 
 $response = Telebirr::buy('iPhone', 999, 'https://domain.tld/return', 0000);
 ```
+
 > Note: The `ShortCode` is provided by Ethio Telecom
 
 When calling that method it return a response
@@ -75,8 +64,8 @@ When calling that method it return a response
     "outTradeNo": "76c1aace47b3dc0a"
 }
 ```
-> Note: Make sure to store the `outTradeNo` in your database so you can fetch that transaction when you receive the notification.
 
+> Note: Make sure to store the `outTradeNo` in your database so you can fetch that transaction when you receive the notification.
 
 Using the toPayUrl you will be redirected to Ethio Telecom's Telebirr<sup>&reg;</sup> site where the user will be able to pay using the Telebirr<sup>&reg;</sup> mobile app or using SMS right there from the browser.
 
@@ -114,5 +103,4 @@ $decoded = Notify::notify('VBMDvN6H2U/AGbxocLQgZfJOR2rLLqTZ5pHm6295AZS4uFXR1YMPJ
 
 The result is a key-value pair array with the unique `outTradeNo` for you to query your database with.
 
-
-**_🚀 And that's it. Do your thing 🚀_**
+**_🚀 And that's it. Do your thing and Give us a star if this package helped you. 🚀_**
