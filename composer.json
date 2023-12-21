@@ -1,5 +1,5 @@
 {
-    "name": "vptrading/telebirr-laravel",
+    "name": "vptrading/ht-telebirr-laravel",
     "description": "Laravel package for H5 telebirr api",
     "autoload": {
         "psr-4": {
