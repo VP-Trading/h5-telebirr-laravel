@@ -22,5 +22,6 @@
                 "Vptrading\\TelebirrLaravel\\TelebirrServiceProvider"
             ]
         }
-    }
+    },
+    "minimum-stability": "stable",
 }
