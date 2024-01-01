@@ -1,6 +1,7 @@
 <p align="center"><a href="https://vptrading.et"><img src="/img/logo.png" alt="Logo V P Trading"></a></p>
 
 <h1 align="center">Laravel Pakcage For<br> Telebirr</h1>
+[![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
 
 # Introduction
 
