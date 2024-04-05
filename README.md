@@ -1,6 +1,6 @@
 <p align="center"><a href="https://vptrading.et"><img src="/img/logo.png" alt="Logo V P Trading"></a></p>
 
-<h1 align="center">Laravel Pakcage For<br> Telebirr</h1>
+<h1 align="center">Laravel Package For<br> Telebirr</h1>
 
 # Introduction
 
